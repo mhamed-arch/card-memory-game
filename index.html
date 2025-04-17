@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لعبة الذاكرة الاحترافية</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="start-screen" id="start-screen">
+        <div class="start-content">
+          <div class="logo">
+            <i class="fas fa-brain"></i>
+            <h1>لعبة الذاكرة</h1>
+          </div>
+          <div class="difficulty-select">
+            <h2>اختر مستوى الصعوبة:</h2>
+            <div class="difficulty-options">
+              <button class="difficulty-btn active" data-level="easy">
+                <i class="fas fa-baby"></i>
+                <span>سهل</span>
+              </button>
+              <button class="difficulty-btn" data-level="medium">
+                <i class="fas fa-user"></i>
+                <span>متوسط</span>
+              </button>
+              <button class="difficulty-btn" data-level="hard">
+                <i class="fas fa-rocket"></i>
+                <span>صعب</span>
+              </button>
+            </div>
+          </div>
+          <button class="start-btn" id="start-btn">
+            <i class="fas fa-play"></i> ابدأ اللعبة
+          </button>
+        </div>
+      </div>
+
+      <div class="game-screen" id="game-screen">
+        <div class="game-header">
+          <h1>لعبة الذاكرة</h1>
+          <div class="game-info">
+            <div class="info-box">
+              <span>الوقت: <span id="time">00:00</span></span>
+            </div>
+            <div class="info-box">
+              <span>المحاولات: <span id="attempts">0</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-grid" id="cards-grid"></div>
+
+        <div class="game-controls">
+          <button id="restart-btn">
+            <i class="fas fa-redo"></i> إعادة تشغيل
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
